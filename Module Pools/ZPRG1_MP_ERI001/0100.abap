@@ -1,0 +1,9 @@
+PROCESS BEFORE OUTPUT.
+  MODULE status_0100.
+
+PROCESS AFTER INPUT.
+  MODULE exit AT EXIT-COMMAND.
+  CHAIN.
+    FIELD : scarr-carrid MODULE validate.
+  ENDCHAIN.
+  MODULE user_command_0100.
